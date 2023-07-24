@@ -12,9 +12,9 @@ We can achieve single sign-on using Office 365 by using MSAL (MicroSoft Authenti
 <img width="542" alt="image" src="https://github.com/KANDEBRAHMA/SSO-Login-Azure/assets/65330501/1d2dddf2-1929-4e10-a7fe-abcd424afa4a">
 
 We need to configure the following things in Angular SPA.
-  1. MSAL INSTANCE
-  2. MSAL GUARD
-  3. MSAL INTERCEPTOR
+    1. MSAL INSTANCE
+    2. MSAL GUARD
+    3. MSAL INTERCEPTOR
 
 ## MSAL Instance
   To configure ClientApplication for accessing the app registered in Azure AD, we need to provide this information.
