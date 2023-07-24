@@ -1,0 +1,18 @@
+<nav class="navbar navbar-light bg-light sticky-top">
+    <div class="container">
+      <div class="nav-brand d-flex" style="cursor: pointer;" [routerLink]="['']">
+        <p  class="nav-brand" class="lead pt-2">{{title}}</p>
+      </div>
+      <div>
+        <a  *ngIf="isAuthenticated">{{activeUser}}</a>
+        <button class="btn" [routerLink]="['profile']">Profile</button>
+        <button class="btn btn-primary mx-2"
+         (click)="login()" *ngIf="!isAuthenticated">Login</button>
+        <button class="btn btn-outline-secondary mx-2"
+        (click)="logout()" *ngIf="isAuthenticated">Logout</button>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
